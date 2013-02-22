@@ -15,7 +15,7 @@ namespace InstrumentationSample
         {
             //Calls an Authorise method which logs the average time calls take to run.
             var logFactory = new FakeLogFactory(new SchedulerProvider());
-            var auth = new AuthorizationService(logFactory);
+            var auth = new InstrumentedAuthorizationService( new AuthorizationService(), logFactory);
             for (int i = 0; i < 20; i++)
             {
                 auth.Authorise(new AuthorizationRequest());

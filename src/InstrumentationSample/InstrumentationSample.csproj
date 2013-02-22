@@ -68,6 +68,7 @@
     <Compile Include="Infrastructure\LogLevel.cs" />
     <Compile Include="Infrastructure\SchedulerProvider.cs" />
     <Compile Include="Infrastructure\Trace.cs" />
+    <Compile Include="InstrumentedAuthorizationService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
